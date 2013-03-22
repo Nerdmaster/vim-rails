@@ -3903,15 +3903,6 @@ function! s:BufMappings()
   nnoremap <buffer> <silent> <Plug>RailsSplitFind  :<C-U>call <SID>Find(v:count1,'S')<CR>
   nnoremap <buffer> <silent> <Plug>RailsVSplitFind :<C-U>call <SID>Find(v:count1,'V')<CR>
   nnoremap <buffer> <silent> <Plug>RailsTabFind    :<C-U>call <SID>Find(v:count1,'T')<CR>
-  if !hasmapto("<Plug>RailsFind")
-    nmap <buffer> gf              <Plug>RailsFind
-  endif
-  if !hasmapto("<Plug>RailsSplitFind")
-    nmap <buffer> <C-W>f          <Plug>RailsSplitFind
-  endif
-  if !hasmapto("<Plug>RailsTabFind")
-    nmap <buffer> <C-W>gf         <Plug>RailsTabFind
-  endif
 endfunction
 
 " }}}1
